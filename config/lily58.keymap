@@ -5,8 +5,9 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
@@ -15,18 +16,15 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_MODS";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <130>;
         };
-
-        lt: lt {
+        sp_lt: space_layer_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP";
+            label = "SPACE_LAYER_TAP";
             bindings = <&mo>, <&kp>;
-
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <160>;
@@ -41,34 +39,48 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3        &kp N4       &kp N5                       &kp N6       &kp N7           &kp N8        &kp N9   &kp N0    &kp GRAVE
-&kp TAB           &kp Q   &kp W   &kp E         &kp R        &kp T                        &kp Y        &kp U            &kp I         &kp O    &kp P     &kp MINUS
-&kp LEFT_SHIFT    &kp A   &kp S   &kp D         &kp F        &kp G                        &kp H        &kp J            &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C         &kp V        &kp B        &none    &none  &kp N        &kp M            &kp COMMA     &kp DOT  &kp FSLH  &hm LANGUAGE_1 LANGUAGE_2
-                                  &kp LEFT_ALT  &lt 1 SPACE  &lt 1 SPACE  &none    &none  &lt 2 ENTER  &lt 2 BACKSPACE  &kp LEFT_GUI
+&kp ESC   &kp N1 &kp N2 &kp N3    &kp N4 &kp N5                      &kp N6  &kp N7    &kp N8    &kp N9  &kp N0   &kp GRAVE
+&kp TAB   &kp Q  &kp W  &kp E     &kp R  &kp T                       &kp Y   &kp U     &kp I     &kp O   &kp P    &kp MINUS
+&kp LCTRL &kp A  &kp S  &kp D     &kp F  &kp G                       &kp H   &kp J     &kp K     &kp L   &kp SEMI &kp SQT
+&kp LSHFT &kp Z  &kp X  &kp C     &kp V  &kp B  &none     &none      &kp N   &kp M     &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                        &kp LGUI &mo 1  &sp_lt 1 SPACE &none &none   &kp RET &mo 2     &kp BSPC
             >;
         };
 
         lower_layer {
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                        &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                     &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &none    &none  &trans        &trans        &trans
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 &out OUT_USB &out OUT_BLE &trans          &trans   &trans   &bt BT_CLR_ALL
+&kp F1     &kp F2       &kp F3       &kp F4       &kp F5       &kp F6                       &kp F7       &kp F8       &kp F9          &kp F10  &kp F11  &kp F12
+&kp GRAVE  &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PRCNT                    &kp CARET    &kp AMPS     &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp TILDE
+&trans     &trans       &trans       &trans       &trans       &trans    &none     &none    &trans       &kp MINUS    &kp KP_PLUS     &kp LBRC &kp RBRC &kp PIPE
+                                     &trans       &trans       &trans    &none     &none    &trans       &trans       &trans
             >;
         };
 
         raise_layer {
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                   &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                   &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                   &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none    &none  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                           &trans   &trans   &trans   &none    &none  &trans       &trans     &trans
+&trans    &trans &trans &trans  &trans  &trans                        &trans      &trans    &trans    &trans   &trans    &trans
+&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                        &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
+&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                        &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
+&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &none     &none     &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
+                        &trans  &trans  &trans    &none     &none     &trans      &trans    &trans
             >;
+        };
+
+        extra_1 {
+            status = "reserved";
+        };
+
+        extra_2 {
+            status = "reserved";
+        };
+
+        extra_3 {
+            status = "reserved";
         };
     };
 };
+
+이건 오류없니
