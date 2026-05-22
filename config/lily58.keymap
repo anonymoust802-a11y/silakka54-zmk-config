@@ -56,47 +56,299 @@
             tapping-term-ms = <350>;
         };
 
-        tb_1: tb_1 {
+        td_1: td_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TB_1";
+            label = "TD_1";
             #binding-cells = <0>;
-            bindings = <&hm F1 NUMBER_1>, <&kp NUMBER_6>, <&kp F6>, <&kp F11>;
+            bindings = <&hm F1 NUMBER_1>, <&kp NUMBER_6>, <&kp EXCLAMATION>;
 
             tapping-term-ms = <170>;
         };
 
-        tb_2: tb_2 {
+        td_2: td_2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TB_2";
+            label = "TD_2";
             #binding-cells = <0>;
-            bindings = <&hm F2 NUMBER_2>, <&kp NUMBER_7>, <&kp F7>, <&kp F12>;
+            bindings = <&hm F2 NUMBER_2>, <&kp NUMBER_7>, <&kp AT_SIGN>;
 
             tapping-term-ms = <170>;
         };
 
-        tb_3: tb_3 {
+        td_3: td_3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TB_3";
+            label = "TD_3";
             #binding-cells = <0>;
-            bindings = <&hm F3 NUMBER_3>, <&kp NUMBER_8>, <&kp F8>;
+            bindings = <&hm F3 NUMBER_3>, <&kp NUMBER_8>, <&kp HASH>;
 
             tapping-term-ms = <170>;
         };
 
-        tb_4: tb_4 {
+        td_4: td_4 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TB_4";
+            label = "TD_4";
             #binding-cells = <0>;
-            bindings = <&hm F4 NUMBER_4>, <&kp NUMBER_9>, <&kp F9>;
+            bindings = <&hm F4 NUMBER_4>, <&kp NUMBER_9>, <&kp DOLLAR>;
 
             tapping-term-ms = <170>;
         };
 
-        tb_5: tb_5 {
+        td_5: td_5 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TB_5";
+            label = "TD_5";
             #binding-cells = <0>;
-            bindings = <&hm F5 NUMBER_5>, <&kp NUMBER_0>, <&kp F10>;
+            bindings = <&hm F5 NUMBER_5>, <&kp NUMBER_0>, <&kp PERCENT>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_r: td_r {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_R";
+            #binding-cells = <0>;
+            bindings = <&hm R LC(F9)>, <&kp LS(R)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_e: td_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_E";
+            #binding-cells = <0>;
+            bindings = <&hm E F8>, <&kp LS(E)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_q: td_q {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_Q";
+            #binding-cells = <0>;
+            bindings = <&hm Q F6>, <&kp LS(E)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_t: td_t {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_T";
+            #binding-cells = <0>;
+            bindings = <&hm T F10>, <&kp LS(T)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_w: td_w {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_W";
+            #binding-cells = <0>;
+            bindings = <&hm W F7>, <&kp LS(W)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_n: td_n {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_N";
+            #binding-cells = <0>;
+            bindings = <&kp N>, <&kp LS(N)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_minus: td_minus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MINUS";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp LS(MINUS)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_apostrophe: td_apostrophe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_APOSTROPHE";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp LS(MINUS)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_semicolon: td_semicolon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SEMICOLON";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp LS(SEMICOLON)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_comma: td_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COMMA";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LS(SEMICOLON)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_forward_slash: td_forward_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_FORWARD_SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LS(SLASH)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_period: td_period {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_PERIOD";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LS(PERIOD)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_6: td_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_6";
+            #binding-cells = <0>;
+            bindings = <&hm F6 NUMBER_1>, <&kp NUMBER_1>, <&kp CARET>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_7: td_7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_7";
+            #binding-cells = <0>;
+            bindings = <&hm F7 NUMBER_7>, <&kp NUMBER_1>, <&kp AMPERSAND>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_8: td_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_8";
+            #binding-cells = <0>;
+            bindings = <&hm F8 NUMBER_8>, <&kp NUMBER_3>, <&kp HASH>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_9: td_9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_9";
+            #binding-cells = <0>;
+            bindings = <&hm F9 NUMBER_9>, <&kp NUMBER_4>, <&kp DOLLAR>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_0: td_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_0";
+            #binding-cells = <0>;
+            bindings = <&hm F10 NUMBER_0>, <&kp NUMBER_5>, <&kp PERCENT>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_a: td_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_A";
+            #binding-cells = <0>;
+            bindings = <&hm F11 A>, <&kp LC(A)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_s: td_s {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_S";
+            #binding-cells = <0>;
+            bindings = <&hm F12 S>, <&kp LC(S)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_d: td_d {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_D";
+            #binding-cells = <0>;
+            bindings = <&hm F13 D>, <&kp LC(D)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_f: td_f {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F";
+            #binding-cells = <0>;
+            bindings = <&hm F14 F>, <&kp LC(F)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_g: td_g {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_G";
+            #binding-cells = <0>;
+            bindings = <&hm F15 G>, <&kp LC(G)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_z: td_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_Z";
+            #binding-cells = <0>;
+            bindings = <&hm F16 Z>, <&kp LC(Z)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_x: td_x {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_X";
+            #binding-cells = <0>;
+            bindings = <&hm F17 X>, <&kp LC(X)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_c: td_c {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_C";
+            #binding-cells = <0>;
+            bindings = <&hm F18 C>, <&kp LC(C)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_v: td_v {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_V";
+            #binding-cells = <0>;
+            bindings = <&hm F19 V>, <&kp LC(V)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_b: td_b {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_B";
+            #binding-cells = <0>;
+            bindings = <&hm F20 B>, <&kp LC(B)>;
+
+            tapping-term-ms = <170>;
+        };
+
+        td_o: td_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_O";
+            #binding-cells = <0>;
+            bindings = <&hm LC(O) O>, <&kp LS(B)>;
 
             tapping-term-ms = <170>;
         };
@@ -116,33 +368,15 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &tb_1  &tb_2  &tb_3         &tb_4               &tb_5                               &kp N6              &kp N7                  &kp N8        &kp N9   &kp N0    &kp GRAVE
-&kp TAB           &kp Q  &kp W  &kp E         &kp R               &kp T                               &kp Y               &kp U                   &kp I         &kp O    &kp P     &kp MINUS
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F               &kp G                               &kp H               &kp J                   &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V               &kp B               &none    &none  &kp N               &kp M                   &kp COMMA     &kp DOT  &kp FSLH  &td_language
+&hm LEFT_GUI ESC  &td_1  &td_2  &td_3         &td_4               &td_5                               &td_6               &td_7                   &td_8         &td_9    &td_0     &kp GRAVE
+&kp TAB           &td_q  &td_w  &td_e         &td_r               &td_t                               &kp Y               &kp U                   &kp I         &kp O    &kp P     &kp MINUS
+&kp LEFT_SHIFT    &td_a  &td_s  &td_d         &td_f               &td_g                               &kp H               &kp J                   &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &td_z  &td_x  &td_c         &td_v               &td_b               &none    &none  &td_n               &kp M                   &kp COMMA     &kp DOT  &kp FSLH  &td_language
                                 &kp LEFT_ALT  &lt_custom 1 SPACE  &lt_custom2 2 LCLK  &none    &none  &lt_custom 4 ENTER  &lt_custom 3 BACKSPACE  &kp LEFT_GUI
             >;
         };
 
         L1 {
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |  n/a   |  |  n/a  |  +   |   -   |   =   |  [   |   ]   |   \   |
-            //                     |      |      |      |  n/a   |  |  n/a  |      |       |       |
-
-            display-name = "Raise";
-            bindings = <
-&kp GRAVE       &kp N6         &kp N7      &kp N8        &kp N9  &kp N0                     &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE       &kp P          &kp O       &kp I         &kp U   &kp P                      &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp SQT         &kp SEMICOLON  &kp L       &kp K         &kp J   &kp H                      &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp LANGUAGE_1  &kp SLASH      &kp PERIOD  &kp COMMA     &kp M   &kp N      &none    &none  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                                           &kp LEFT_GUI  &trans  &kp ENTER  &none    &none  &trans       &trans     &trans
-            >;
-        };
-
-        L2 {
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   | USB  | BLE   |       |      |       |BTCLRALL|
             // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
@@ -152,11 +386,29 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_SEL 0  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5                     &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
-&bt BT_SEL 1  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10                    &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
-&bt BT_SEL 2  &kp F11  &kp F12  &kp HASH    &kp UP         &kp PRCNT                  &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&bt BT_SEL 3  &trans   &trans   &kp LEFT    &kp DOWN       &kp RIGHT  &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                &kp DELETE  &kp BACKSPACE  &trans     &none    &none  &trans        &trans        &trans
+&bt BT_SEL 0  &kp F1   &kp F2   &kp F3       &kp F4         &kp F5                         &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
+&bt BT_SEL 1  &kp F6   &kp F7   &kp F8       &kp F9         &kp F10                        &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
+&bt BT_SEL 2  &kp F11  &kp F12  &kp PAGE_UP  &kp UP         &kp PAGE_DOWN                  &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&bt BT_SEL 3  &trans   &trans   &kp LEFT     &kp DOWN       &kp RIGHT      &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                &kp DELETE   &kp BACKSPACE  &trans         &none    &none  &trans        &trans        &trans
+            >;
+        };
+
+        L2 {
+            // ------------------------------------------------------------------------------------------------------------
+            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
+            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
+            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |  n/a   |  |  n/a  |  +   |   -   |   =   |  [   |   ]   |   \   |
+            //                     |      |      |      |  n/a   |  |  n/a  |      |       |       |
+
+            display-name = "Raise";
+            bindings = <
+&td_6  &td_7  &td_8      &td_9       &td_0          &kp GRAVE                     &trans       &trans     &trans     &trans    &trans     &trans
+&kp Y  &kp U  &kp I      &kp O       &kp P          &kp MINUS                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
+&kp H  &kp J  &kp K      &kp L       &kp SEMICOLON  &kp SQT                       &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
+&kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &td_language  &none    &none  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+                         &kp DELETE  &kp BACKSPACE  &trans        &none    &none  &trans       &trans     &trans
             >;
         };
 
