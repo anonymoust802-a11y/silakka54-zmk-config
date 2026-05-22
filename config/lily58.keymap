@@ -150,7 +150,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_N";
             #binding-cells = <0>;
-            bindings = <&kp N>, <&kp LS(N)>;
+            bindings = <&hm N LC(N)>, <&kp LS(N)>;
 
             tapping-term-ms = <170>;
         };
@@ -352,6 +352,15 @@
 
             tapping-term-ms = <170>;
         };
+
+        td_p: td_p {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_P";
+            #binding-cells = <0>;
+            bindings = <&hm LC(P) O>, <&kp LS(P)>;
+
+            tapping-term-ms = <170>;
+        };
     };
 
     keymap {
@@ -369,7 +378,7 @@
             display-name = "Base";
             bindings = <
 &hm LEFT_GUI ESC  &td_1  &td_2  &td_3         &td_4               &td_5                               &td_6               &td_7                   &td_8         &td_9    &td_0     &kp GRAVE
-&kp TAB           &td_q  &td_w  &td_e         &td_r               &td_t                               &kp Y               &kp U                   &kp I         &kp O    &kp P     &kp MINUS
+&kp TAB           &td_q  &td_w  &td_e         &td_r               &td_t                               &kp Y               &kp U                   &kp I         &td_o    &td_p     &kp MINUS
 &kp LEFT_SHIFT    &td_a  &td_s  &td_d         &td_f               &td_g                               &kp H               &kp J                   &kp K         &kp L    &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &td_z  &td_x  &td_c         &td_v               &td_b               &none    &none  &td_n               &kp M                   &kp COMMA     &kp DOT  &kp FSLH  &td_language
                                 &kp LEFT_ALT  &lt_custom 1 SPACE  &lt_custom2 2 LCLK  &none    &none  &lt_custom 4 ENTER  &lt_custom 3 BACKSPACE  &kp LEFT_GUI
@@ -404,11 +413,11 @@
 
             display-name = "Raise";
             bindings = <
-&td_6  &td_7  &td_8      &td_9       &td_0          &kp GRAVE                     &trans       &trans     &trans     &trans    &trans     &trans
-&kp Y  &kp U  &kp I      &kp O       &kp P          &kp MINUS                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp H  &kp J  &kp K      &kp L       &kp SEMICOLON  &kp SQT                       &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &td_language  &none    &none  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                         &kp DELETE  &kp BACKSPACE  &trans        &none    &none  &trans       &trans     &trans
+&trans  &td_6  &td_7  &td_8       &td_9          &td_0                          &trans       &trans     &trans     &trans    &trans     &trans
+&trans  &kp Y  &kp U  &kp I       &kp O          &kp P                          &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
+&trans  &kp H  &kp J  &kp K       &kp L          &kp SEMICOLON                  &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
+&trans  &kp N  &kp M  &kp COMMA   &kp PERIOD     &td_language   &none    &none  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+                      &kp DELETE  &kp BACKSPACE  &trans         &none    &none  &trans       &trans     &trans
             >;
         };
 
