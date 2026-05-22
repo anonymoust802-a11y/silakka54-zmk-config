@@ -51,7 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LANGUAGE";
             #binding-cells = <0>;
-            bindings = <&hm_hold LEFT_CONTROL LANGUAGE_1>, <&kp LANGUAGE_2>;
+            bindings = <&hm LEFT_CONTROL LANGUAGE_1>, <&kp LANGUAGE_2>;
 
             tapping-term-ms = <350>;
         };
@@ -168,7 +168,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_APOSTROPHE";
             #binding-cells = <0>;
-            bindings = <&hm_hold LEFT_SHIFT SQT>, <&kp LS(MINUS)>;
+            bindings = <&none>, <&kp LS(MINUS)>;
 
             tapping-term-ms = <200>;
         };
@@ -369,17 +369,6 @@
             #binding-cells = <1>;
             release-after-ms = <200>;
             quick-release;
-        };
-
-        hm_hold: hm_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_HOLD";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
-            flavor = "hold-preferred";
         };
 
         td_L1: td_L1 {
