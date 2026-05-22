@@ -429,7 +429,7 @@
             bindings = <
 &hm LEFT_GUI ESC  &td_1  &td_2  &td_3         &td_4               &td_5                   &td_6               &td_7                   &td_8         &td_9       &td_0              &kp GRAVE
 &kp TAB           &kp Q  &kp W  &kp E         &kp R               &kp T                   &kp Y               &kp U                   &kp I         &td_o       &td_p              &td_minus
-&osm LEFT_SHIFT   &kp A  &kt S  &kp D         &kp F               &kp G                   &kp H               &kp J                   &kp K         &kp L       &td_semicolon      &td_apostrophe
+&osm LEFT_SHIFT   &kp A  &kp S  &kp D         &kp F               &kp G                   &kp H               &kp J                   &kp K         &kp L       &td_semicolon      &td_apostrophe
 &td_language      &kp Z  &kp X  &kp C         &kp V               &kp B   &none    &none  &td_n               &kp M                   &td_comma     &td_period  &td_forward_slash  &td_language
                                 &kp LEFT_ALT  &lt_custom 2 SPACE  &td_L1  &none    &none  &lt_custom 3 ENTER  &lt_custom 4 BACKSPACE  &kp LEFT_GUI
             >;
