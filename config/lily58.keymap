@@ -62,7 +62,7 @@
             #binding-cells = <0>;
             bindings = <&hm F1 NUMBER_1>, <&kp NUMBER_6>, <&kp EXCLAMATION>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_2: td_2 {
@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             bindings = <&hm F2 NUMBER_2>, <&kp NUMBER_7>, <&kp AT_SIGN>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_3: td_3 {
@@ -80,7 +80,7 @@
             #binding-cells = <0>;
             bindings = <&hm F3 NUMBER_3>, <&kp NUMBER_8>, <&kp HASH>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_4: td_4 {
@@ -89,7 +89,7 @@
             #binding-cells = <0>;
             bindings = <&hm F4 NUMBER_4>, <&kp NUMBER_9>, <&kp DOLLAR>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_5: td_5 {
@@ -98,7 +98,7 @@
             #binding-cells = <0>;
             bindings = <&hm F5 NUMBER_5>, <&kp NUMBER_0>, <&kp PERCENT>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_r: td_r {
@@ -107,7 +107,7 @@
             #binding-cells = <0>;
             bindings = <&kp R>, <&kp LS(R)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_e: td_e {
@@ -116,16 +116,16 @@
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp LS(E)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_q: td_q {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_Q";
             #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp LS(E)>;
+            bindings = <&kp Q>, <&kp LS(Q)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_t: td_t {
@@ -134,7 +134,7 @@
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp LS(T)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_w: td_w {
@@ -143,7 +143,7 @@
             #binding-cells = <0>;
             bindings = <&kp W>, <&kp LS(W)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_n: td_n {
@@ -152,25 +152,25 @@
             #binding-cells = <0>;
             bindings = <&kp N>, <&kp LS(N)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_minus: td_minus {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MINUS";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp LS(MINUS)>;
+            bindings = <&hm TAB MINUS>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_apostrophe: td_apostrophe {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_APOSTROPHE";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp LS(MINUS)>;
+            bindings = <&hm LEFT_SHIFT SQT>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_semicolon: td_semicolon {
@@ -179,7 +179,7 @@
             #binding-cells = <0>;
             bindings = <&kp SEMICOLON>, <&kp LS(SEMICOLON)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_comma: td_comma {
@@ -188,7 +188,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LS(SEMICOLON)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_forward_slash: td_forward_slash {
@@ -197,7 +197,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LS(SLASH)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_period: td_period {
@@ -206,7 +206,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LS(PERIOD)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_6: td_6 {
@@ -215,7 +215,7 @@
             #binding-cells = <0>;
             bindings = <&hm F6 NUMBER_1>, <&kp NUMBER_1>, <&kp CARET>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_7: td_7 {
@@ -224,7 +224,7 @@
             #binding-cells = <0>;
             bindings = <&hm F7 NUMBER_7>, <&kp NUMBER_1>, <&kp AMPERSAND>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_8: td_8 {
@@ -233,7 +233,7 @@
             #binding-cells = <0>;
             bindings = <&hm F8 NUMBER_8>, <&kp NUMBER_3>, <&kp HASH>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_9: td_9 {
@@ -242,7 +242,7 @@
             #binding-cells = <0>;
             bindings = <&hm F9 NUMBER_9>, <&kp NUMBER_4>, <&kp DOLLAR>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_0: td_0 {
@@ -251,7 +251,7 @@
             #binding-cells = <0>;
             bindings = <&hm F10 NUMBER_0>, <&kp NUMBER_5>, <&kp PERCENT>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_a: td_a {
@@ -260,7 +260,7 @@
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp LC(A)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_s: td_s {
@@ -269,7 +269,7 @@
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp LC(S)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_d: td_d {
@@ -278,7 +278,7 @@
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp LC(D)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_f: td_f {
@@ -287,7 +287,7 @@
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp LC(F)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_g: td_g {
@@ -296,16 +296,16 @@
             #binding-cells = <0>;
             bindings = <&kp G>, <&kp LC(G)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_z: td_z {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_Z";
             #binding-cells = <0>;
-            bindings = <&kp LC(Z)>, <&kp LC(Z)>;
+            bindings = <&kp Z>, <&kp LC(Z)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_x: td_x {
@@ -314,7 +314,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp LC(X)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_c: td_c {
@@ -323,7 +323,7 @@
             #binding-cells = <0>;
             bindings = <&kp C>, <&kp LC(C)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_v: td_v {
@@ -332,7 +332,7 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp LC(V)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_b: td_b {
@@ -341,16 +341,16 @@
             #binding-cells = <0>;
             bindings = <&kp B>, <&kp LC(B)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_o: td_o {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_O";
             #binding-cells = <0>;
-            bindings = <&kp O>, <&kp LS(B)>;
+            bindings = <&kp O>, <&kp LS(O)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         td_p: td_p {
@@ -359,7 +359,7 @@
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp LS(P)>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -377,10 +377,10 @@
 
             display-name = "Base";
             bindings = <
-&hm LEFT_GUI ESC  &td_1  &td_2  &td_3         &td_4               &td_5                               &td_6               &td_7                   &td_8         &td_9    &td_0     &kp GRAVE
-&kp TAB           &td_q  &td_w  &td_e         &td_r               &td_t                               &kp Y               &kp U                   &kp I         &td_o    &td_p     &kp MINUS
-&kp LEFT_SHIFT    &td_a  &td_s  &td_d         &td_f               &td_g                               &kp H               &kp J                   &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &td_z  &td_x  &td_c         &td_v               &td_b               &none    &none  &td_n               &kp M                   &kp COMMA     &kp DOT  &kp FSLH  &td_language
+&hm LEFT_GUI ESC  &td_1  &td_2  &td_3         &td_4               &td_5                               &td_6               &td_7                   &td_8         &td_9       &td_0              &kp GRAVE
+&kp TAB           &td_q  &td_w  &td_e         &td_r               &td_t                               &kp Y               &kp U                   &kp I         &td_o       &td_p              &td_minus
+&kp LEFT_SHIFT    &td_a  &td_s  &td_d         &td_f               &td_g                               &kp H               &kp J                   &kp K         &kp L       &td_semicolon      &td_apostrophe
+&kp LEFT_CONTROL  &td_z  &td_x  &td_c         &td_v               &td_b               &none    &none  &td_n               &kp M                   &td_comma     &td_period  &td_forward_slash  &td_language
                                 &kp LEFT_ALT  &lt_custom 1 SPACE  &lt_custom2 2 LCLK  &none    &none  &lt_custom 4 ENTER  &lt_custom 3 BACKSPACE  &kp LEFT_GUI
             >;
         };
@@ -395,11 +395,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_SEL 0  &kp F1   &kp F2   &kp F3            &kp F4         &kp F5                             &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
-&bt BT_SEL 1  &kp F6   &kp F7   &kp F8            &kp F9         &kp F10                            &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
-&bt BT_SEL 2  &kp F11  &kp F12  &hm HOME PAGE_UP  &kp UP         &hm END PAGE_DOWN                  &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&bt BT_SEL 3  &trans   &trans   &kp LEFT          &kp DOWN       &kp RIGHT          &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                &kp DELETE        &kp BACKSPACE  &trans             &none    &none  &trans        &trans        &trans
+&bt BT_SEL 0  &kp F1   &kp F2   &kp F3            &kp F4    &kp F5                             &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
+&bt BT_SEL 1  &kp F6   &kp F7   &kp F8            &kp F9    &kp F10                            &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
+&bt BT_SEL 2  &kp F11  &kp F12  &hm HOME PAGE_UP  &kp UP    &hm END PAGE_DOWN                  &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&bt BT_SEL 3  &trans   &trans   &kp LEFT          &kp DOWN  &kp RIGHT          &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                &trans            &trans    &trans             &none    &none  &trans        &trans        &trans
             >;
         };
 
