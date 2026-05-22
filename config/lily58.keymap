@@ -105,7 +105,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_R";
             #binding-cells = <0>;
-            bindings = <&hm R LC(F9)>, <&kp LS(R)>;
+            bindings = <&kp R>, <&kp LS(R)>;
 
             tapping-term-ms = <170>;
         };
@@ -114,7 +114,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_E";
             #binding-cells = <0>;
-            bindings = <&hm E F8>, <&kp LS(E)>;
+            bindings = <&kp E>, <&kp LS(E)>;
 
             tapping-term-ms = <170>;
         };
@@ -123,7 +123,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_Q";
             #binding-cells = <0>;
-            bindings = <&hm Q F6>, <&kp LS(E)>;
+            bindings = <&kp Q>, <&kp LS(E)>;
 
             tapping-term-ms = <170>;
         };
@@ -132,7 +132,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_T";
             #binding-cells = <0>;
-            bindings = <&hm T F10>, <&kp LS(T)>;
+            bindings = <&kp T>, <&kp LS(T)>;
 
             tapping-term-ms = <170>;
         };
@@ -141,7 +141,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_W";
             #binding-cells = <0>;
-            bindings = <&hm W F7>, <&kp LS(W)>;
+            bindings = <&kp W>, <&kp LS(W)>;
 
             tapping-term-ms = <170>;
         };
@@ -150,7 +150,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_N";
             #binding-cells = <0>;
-            bindings = <&hm N LC(N)>, <&kp LS(N)>;
+            bindings = <&kp N>, <&kp LS(N)>;
 
             tapping-term-ms = <170>;
         };
@@ -258,7 +258,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_A";
             #binding-cells = <0>;
-            bindings = <&hm F11 A>, <&kp LC(A)>;
+            bindings = <&kp A>, <&kp LC(A)>;
 
             tapping-term-ms = <170>;
         };
@@ -267,7 +267,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_S";
             #binding-cells = <0>;
-            bindings = <&hm F12 S>, <&kp LC(S)>;
+            bindings = <&kp S>, <&kp LC(S)>;
 
             tapping-term-ms = <170>;
         };
@@ -276,7 +276,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_D";
             #binding-cells = <0>;
-            bindings = <&hm F13 D>, <&kp LC(D)>;
+            bindings = <&kp D>, <&kp LC(D)>;
 
             tapping-term-ms = <170>;
         };
@@ -285,7 +285,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_F";
             #binding-cells = <0>;
-            bindings = <&hm F14 F>, <&kp LC(F)>;
+            bindings = <&kp F>, <&kp LC(F)>;
 
             tapping-term-ms = <170>;
         };
@@ -294,7 +294,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_G";
             #binding-cells = <0>;
-            bindings = <&hm F15 G>, <&kp LC(G)>;
+            bindings = <&kp G>, <&kp LC(G)>;
 
             tapping-term-ms = <170>;
         };
@@ -303,7 +303,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_Z";
             #binding-cells = <0>;
-            bindings = <&hm F16 Z>, <&kp LC(Z)>;
+            bindings = <&kp LC(Z)>, <&kp LC(Z)>;
 
             tapping-term-ms = <170>;
         };
@@ -312,7 +312,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_X";
             #binding-cells = <0>;
-            bindings = <&hm F17 X>, <&kp LC(X)>;
+            bindings = <&kp X>, <&kp LC(X)>;
 
             tapping-term-ms = <170>;
         };
@@ -321,7 +321,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_C";
             #binding-cells = <0>;
-            bindings = <&hm F18 C>, <&kp LC(C)>;
+            bindings = <&kp C>, <&kp LC(C)>;
 
             tapping-term-ms = <170>;
         };
@@ -330,7 +330,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_V";
             #binding-cells = <0>;
-            bindings = <&hm F19 V>, <&kp LC(V)>;
+            bindings = <&kp V>, <&kp LC(V)>;
 
             tapping-term-ms = <170>;
         };
@@ -339,7 +339,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_B";
             #binding-cells = <0>;
-            bindings = <&hm F20 B>, <&kp LC(B)>;
+            bindings = <&kp B>, <&kp LC(B)>;
 
             tapping-term-ms = <170>;
         };
@@ -348,7 +348,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_O";
             #binding-cells = <0>;
-            bindings = <&hm LC(O) O>, <&kp LS(B)>;
+            bindings = <&kp O>, <&kp LS(B)>;
 
             tapping-term-ms = <170>;
         };
@@ -357,7 +357,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_P";
             #binding-cells = <0>;
-            bindings = <&hm LC(P) O>, <&kp LS(P)>;
+            bindings = <&kp P>, <&kp LS(P)>;
 
             tapping-term-ms = <170>;
         };
