@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TB_1";
             #binding-cells = <0>;
-            bindings = <&hm F1 NUMBER_1>, <&kp NUMBER_6>;
+            bindings = <&hm F1 NUMBER_1>, <&kp NUMBER_6>, <&kp F6>, <&kp F11>;
 
             tapping-term-ms = <170>;
         };
@@ -69,7 +69,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TB_2";
             #binding-cells = <0>;
-            bindings = <&hm F2 NUMBER_2>, <&kp NUMBER_7>;
+            bindings = <&hm F2 NUMBER_2>, <&kp NUMBER_7>, <&kp F7>, <&kp F12>;
 
             tapping-term-ms = <170>;
         };
@@ -78,7 +78,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TB_3";
             #binding-cells = <0>;
-            bindings = <&hm F3 NUMBER_3>, <&kp NUMBER_8>;
+            bindings = <&hm F3 NUMBER_3>, <&kp NUMBER_8>, <&kp F8>;
 
             tapping-term-ms = <170>;
         };
@@ -87,7 +87,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TB_4";
             #binding-cells = <0>;
-            bindings = <&hm F4 NUMBER_4>, <&kp NUMBER_9>;
+            bindings = <&hm F4 NUMBER_4>, <&kp NUMBER_9>, <&kp F9>;
 
             tapping-term-ms = <170>;
         };
@@ -96,7 +96,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TB_5";
             #binding-cells = <0>;
-            bindings = <&hm F5 NUMBER_5>, <&kp NUMBER_0>;
+            bindings = <&hm F5 NUMBER_5>, <&kp NUMBER_0>, <&kp F10>;
 
             tapping-term-ms = <170>;
         };
@@ -152,11 +152,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_SEL 0  &kp F1   &kp F2   &kp F3    &kp F4         &kp F5                     &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
-&bt BT_SEL 1  &kp F6   &kp F7   &kp F8    &kp F9         &kp F10                    &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
-&bt BT_SEL 2  &kp F11  &kp F12  &kp HASH  &kp UP         &kp PRCNT                  &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&bt BT_SEL 3  &trans   &trans   &kp LEFT  &kp DOWN       &kp RIGHT  &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                &trans    &kp BACKSPACE  &trans     &none    &none  &trans        &trans        &trans
+&bt BT_SEL 0  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5                     &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
+&bt BT_SEL 1  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10                    &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
+&bt BT_SEL 2  &kp F11  &kp F12  &kp HASH    &kp UP         &kp PRCNT                  &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&bt BT_SEL 3  &trans   &trans   &kp LEFT    &kp DOWN       &kp RIGHT  &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                &kp DELETE  &kp BACKSPACE  &trans     &none    &none  &trans        &trans        &trans
             >;
         };
 
