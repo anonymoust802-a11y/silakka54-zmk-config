@@ -62,7 +62,7 @@
             #binding-cells = <0>;
             bindings = <&hm F1 NUMBER_1>, <&kp NUMBER_6>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <170>;
         };
 
         tb_2: tb_2 {
@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             bindings = <&hm F2 NUMBER_2>, <&kp NUMBER_7>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <170>;
         };
 
         tb_3: tb_3 {
@@ -80,7 +80,7 @@
             #binding-cells = <0>;
             bindings = <&hm F3 NUMBER_3>, <&kp NUMBER_8>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <170>;
         };
 
         tb_4: tb_4 {
@@ -89,7 +89,7 @@
             #binding-cells = <0>;
             bindings = <&hm F4 NUMBER_4>, <&kp NUMBER_9>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <170>;
         };
 
         tb_5: tb_5 {
@@ -98,7 +98,7 @@
             #binding-cells = <0>;
             bindings = <&hm F5 NUMBER_5>, <&kp NUMBER_0>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <170>;
         };
     };
 
