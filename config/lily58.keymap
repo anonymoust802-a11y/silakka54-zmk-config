@@ -23,7 +23,7 @@
             flavor = "tap-preferred";
         };
 
-        lt_kp: lt {
+        lt_kp_int_ret: lt {
             compatible = "zmk,behavior-hold-tap";
             label = "layer";
             bindings = <&mo>, <&kp>;
@@ -31,7 +31,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <170>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
             retro-tap;
         };
 
@@ -43,7 +43,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <130>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
             retro-tap;
         };
 
@@ -51,7 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LANGUAGE";
             #binding-cells = <0>;
-            bindings = <&lt_kp 3 RIGHT_ALT>, <&kp LANGUAGE_2>;
+            bindings = <&lt_kp_int_ret 3 RIGHT_ALT>, <&kp LANGUAGE_2>;
 
             tapping-term-ms = <350>;
         };
@@ -255,6 +255,17 @@
 
             tapping-term-ms = <200>;
         };
+
+        hm_mod: hm_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            flavor = "tap-unless-interrupted";
+        };
     };
 
     combos {
@@ -302,11 +313,11 @@
 
             display-name = "Base";
             bindings = <
-&td_esc           &td_1  &td_2  &td_3         &td_4           &td_5                   &td_6         &td_7               &td_8               &td_9       &td_0              &td_equal
-&kp TAB           &kp Q  &kp W  &kp E         &kp R           &kp T                   &kp Y         &kp U               &kp I               &td_o       &td_p              &td_minus
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F           &kp G                   &kp H         &kp J               &kp K               &kp L       &td_semicolon      &td_apostrophe
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V           &kp B   &none    &none  &kp N         &kp M               &td_comma           &td_period  &td_forward_slash  &kp LEFT_CONTROL
-                                &kp LEFT_ALT  &lt_kp 2 SPACE  &td_L1  &none    &none  &td_language  &lt_kp 4 BACKSPACE  &hm LEFT_GUI ENTER
+&td_esc           &td_1  &td_2  &td_3         &td_4                   &td_5                   &td_6         &td_7                       &td_8               &td_9       &td_0              &td_equal
+&kp TAB           &kp Q  &kp W  &kp E         &kp R                   &kp T                   &kp Y         &kp U                       &kp I               &td_o       &td_p              &td_minus
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F                   &kp G                   &kp H         &kp J                       &kp K               &kp L       &td_semicolon      &td_apostrophe
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V                   &kp B   &none    &none  &kp N         &kp M                       &td_comma           &td_period  &td_forward_slash  &kp LEFT_CONTROL
+                                &kp LEFT_ALT  &lt_kp_int_ret 2 SPACE  &td_L1  &none    &none  &td_language  &lt_kp_int_ret 4 BACKSPACE  &hm LEFT_GUI ENTER
             >;
         };
 
