@@ -23,7 +23,7 @@
             flavor = "tap-preferred";
         };
 
-        lt_custom: lt {
+        lt_kp: lt {
             compatible = "zmk,behavior-hold-tap";
             label = "layer";
             bindings = <&mo>, <&kp>;
@@ -35,9 +35,9 @@
             retro-tap;
         };
 
-        lt_custom2: lt_custom2 {
+        lt_mo: lt_mo {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_CUSTOM2";
+            label = "LT_MO";
             bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
@@ -51,7 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LANGUAGE";
             #binding-cells = <0>;
-            bindings = <&hm LEFT_CONTROL LANGUAGE_1>, <&kp LANGUAGE_2>;
+            bindings = <&lt_kp 3 RIGHT_ALT>, <&kp LANGUAGE_2>;
 
             tapping-term-ms = <350>;
         };
@@ -114,7 +114,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_APOSTROPHE";
             #binding-cells = <0>;
-            bindings = <&none>, <&kp LS(MINUS)>;
+            bindings = <&hm_2 LEFT_SHIFT APOS>, <&kp LS(MINUS)>;
 
             tapping-term-ms = <200>;
         };
@@ -141,7 +141,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_FORWARD_SLASH";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp LS(SLASH)>;
+            bindings = <&kp SLASH>, <&kp LS(SLASH)>;
 
             tapping-term-ms = <200>;
         };
@@ -222,7 +222,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_L1";
             #binding-cells = <0>;
-            bindings = <&lt_custom2 1 LCLK>, <&kp ENTER>;
+            bindings = <&lt_mo 1 LCLK>, <&kp ENTER>;
 
             tapping-term-ms = <200>;
         };
@@ -236,6 +236,24 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <130>;
             flavor = "tap-unless-interrupted";
+        };
+
+        td_esc: td_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ESC";
+            #binding-cells = <0>;
+            bindings = <&hm GRAVE ESCAPE>, <&kp TILDE>;
+
+            tapping-term-ms = <200>;
+        };
+
+        td_equal: td_equal {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_EQUAL";
+            #binding-cells = <0>;
+            bindings = <&hm TAB EQUAL>, <&kp LS(EQUAL)>;
+
+            tapping-term-ms = <200>;
         };
     };
 
@@ -284,11 +302,11 @@
 
             display-name = "Base";
             bindings = <
-&hm LEFT_GUI ESC  &td_1  &td_2  &td_3         &td_4               &td_5                   &td_6               &td_7                   &td_8         &td_9       &td_0              &kp GRAVE
-&kp TAB           &kp Q  &kp W  &kp E         &kp R               &kp T                   &kp Y               &kp U                   &kp I         &td_o       &td_p              &td_minus
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F               &kp G                   &kp H               &kp J                   &kp K         &kp L       &td_semicolon      &td_apostrophe
-&td_language      &kp Z  &kp X  &kp C         &kp V               &kp B   &none    &none  &kp N               &kp M                   &td_comma     &td_period  &td_forward_slash  &td_language
-                                &kp LEFT_ALT  &lt_custom 2 SPACE  &td_L1  &none    &none  &lt_custom 3 ENTER  &lt_custom 4 BACKSPACE  &kp LEFT_GUI
+&td_esc           &td_1  &td_2  &td_3         &td_4           &td_5                   &td_6         &td_7               &td_8               &td_9       &td_0              &td_equal
+&kp TAB           &kp Q  &kp W  &kp E         &kp R           &kp T                   &kp Y         &kp U               &kp I               &td_o       &td_p              &td_minus
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F           &kp G                   &kp H         &kp J               &kp K               &kp L       &td_semicolon      &td_apostrophe
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V           &kp B   &none    &none  &kp N         &kp M               &td_comma           &td_period  &td_forward_slash  &kp LEFT_CONTROL
+                                &kp LEFT_ALT  &lt_kp 2 SPACE  &td_L1  &none    &none  &td_language  &lt_kp 4 BACKSPACE  &hm LEFT_GUI ENTER
             >;
         };
 
