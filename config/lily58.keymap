@@ -19,7 +19,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <220>;
-            quick-tap-ms = <130>;
+            quick-tap-ms = <170>;
             flavor = "hold-preferred";
         };
 
@@ -31,7 +31,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <170>;
-            flavor = "tap-unless-interrupted";
+            flavor = "hold-preferred";
             retro-tap;
         };
 
@@ -260,6 +260,18 @@
             flavor = "hold-preferred";
             retro-tap;
         };
+
+        lt_kp_tap_ret: lt_kp_tap_ret {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_KP_TAP_RET";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <170>;
+            flavor = "tap-preferred";
+            retro-tap;
+        };
     };
 
     combos {
@@ -307,15 +319,15 @@
 
             display-name = "Base";
             bindings = <
-&td_esc           &td_1        &td_2        &td_3         &td_4                    &td_5                        &td_6         &td_7                        &td_8               &td_9        &td_0              &td_equal
-&kp TAB           &hm LS(Q) Q  &hm LS(W) W  &hm LS(E) E   &hm LS(R) R              &hm LS(T) T                  &kp Y         &kp U                        &kp I               &hm LS(O) O  &hm LS(P) P        &td_minus
-&kp LEFT_SHIFT    &kp A        &kp S        &kp D         &kp F                    &kp G                        &kp H         &kp J                        &kp K               &kp L        &td_semicolon      &td_apostrophe
-&kp LEFT_CONTROL  &kp Z        &kp X        &kp C         &kp V                    &kp B        &none    &none  &kp N         &kp M                        &td_comma           &td_period   &td_forward_slash  &kp LEFT_CONTROL
-                                            &kp LEFT_ALT  &lt_kp_hold_ret 2 SPACE  &td_L1       &none    &none  &td_language  &lt_kp_hold_ret 4 BACKSPACE  &hm LEFT_GUI ENTER
+&td_esc           &td_1        &td_2        &td_3         &td_4                   &td_5                        &td_6         &td_7                       &td_8               &td_9        &td_0              &td_equal
+&kp TAB           &hm LS(Q) Q  &hm LS(W) W  &hm LS(E) E   &hm LS(R) R             &hm LS(T) T                  &kp Y         &kp U                       &kp I               &hm LS(O) O  &hm LS(P) P        &td_minus
+&kp LEFT_SHIFT    &kp A        &kp S        &kp D         &kp F                   &kp G                        &kp H         &kp J                       &kp K               &kp L        &td_semicolon      &td_apostrophe
+&kp LEFT_CONTROL  &kp Z        &kp X        &kp C         &kp V                   &kp B        &none    &none  &kp N         &kp M                       &td_comma           &td_period   &td_forward_slash  &kp LEFT_CONTROL
+                                            &kp LEFT_ALT  &lt_kp_tap_ret 2 SPACE  &td_L1       &none    &none  &td_language  &lt_kp_tap_ret 4 BACKSPACE  &hm LEFT_GUI ENTER
             >;
         };
 
-        L1 {
+        L1_quick {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
@@ -333,7 +345,7 @@
             >;
         };
 
-        L2 {
+        L2_slow {
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   | USB  | BLE   |       |      |       |BTCLRALL|
             // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
@@ -351,7 +363,7 @@
             >;
         };
 
-        R1 {
+        R1_quick {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans          &trans          &trans           &trans                    &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &mkp MB4  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans                    &trans
@@ -361,7 +373,7 @@
             >;
         };
 
-        R2 {
+        R2_slow {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &kp UP_ARROW  &trans     &trans  &trans
