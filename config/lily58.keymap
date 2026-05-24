@@ -150,7 +150,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PERIOD";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp LS(PERIOD)>;
+            bindings = <&kp PERIOD>, <&kp LS(PERIOD)>;
 
             tapping-term-ms = <200>;
         };
@@ -159,7 +159,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_6";
             #binding-cells = <0>;
-            bindings = <&hm F6 NUMBER_1>, <&kp NUMBER_1>, <&kp CARET>;
+            bindings = <&hm F6 NUMBER_6>, <&kp NUMBER_1>, <&kp CARET>;
 
             tapping-term-ms = <200>;
         };
