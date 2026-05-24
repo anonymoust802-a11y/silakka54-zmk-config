@@ -35,9 +35,9 @@
             retro-tap;
         };
 
-        lt_mo: lt_mo {
+        lt_mo_hold_ret: lt_mo_hold_ret {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_MO";
+            label = "LT_MO_HOLD_RET";
             bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
@@ -114,7 +114,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_APOSTROPHE";
             #binding-cells = <0>;
-            bindings = <&hm_2 LEFT_SHIFT APOS>, <&kp LS(MINUS)>;
+            bindings = <&hm_hold LEFT_SHIFT APOS>, <&kp LS(MINUS)>;
 
             tapping-term-ms = <200>;
         };
@@ -204,14 +204,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_L1";
             #binding-cells = <0>;
-            bindings = <&lt_mo 1 LCLK>, <&kp ENTER>;
+            bindings = <&lt_mo_hold_ret 1 LCLK>, <&kp ENTER>;
 
             tapping-term-ms = <200>;
         };
 
-        hm_2: hm_2 {
+        hm_hold: hm_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_2";
+            label = "HM_HOLD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -236,17 +236,6 @@
             bindings = <&hm TAB EQUAL>, <&kp LS(EQUAL)>;
 
             tapping-term-ms = <200>;
-        };
-
-        hm_mod: hm_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_MOD";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
-            flavor = "tap-unless-interrupted";
         };
 
         hm_msc_mkp: hm_msc_mkp {
@@ -319,11 +308,11 @@
 
             display-name = "Base";
             bindings = <
-&td_esc           &td_1        &td_2        &td_3         &td_4                   &td_5                        &td_6         &td_7                       &td_8               &td_9        &td_0              &td_equal
-&kp TAB           &hm LS(Q) Q  &hm LS(W) W  &hm LS(E) E   &hm LS(R) R             &hm LS(T) T                  &kp Y         &kp U                       &kp I               &hm LS(O) O  &hm LS(P) P        &td_minus
-&kp LEFT_SHIFT    &kp A        &kp S        &kp D         &kp F                   &kp G                        &kp H         &kp J                       &kp K               &kp L        &td_semicolon      &td_apostrophe
-&kp LEFT_CONTROL  &kp Z        &kp X        &kp C         &kp V                   &kp B        &none    &none  &hm LS(N) N   &kp M                       &td_comma           &td_period   &td_forward_slash  &kp LEFT_CONTROL
-                                            &kp LEFT_ALT  &lt_kp_tap_ret 2 SPACE  &td_L1       &none    &none  &td_language  &lt_kp_tap_ret 4 BACKSPACE  &hm LEFT_GUI ENTER
+&td_esc           &td_1        &td_2        &td_3         &td_4                   &td_5                        &td_6         &td_7                       &td_8                    &td_9        &td_0              &td_equal
+&kp TAB           &hm LS(Q) Q  &hm LS(W) W  &hm LS(E) E   &hm LS(R) R             &hm LS(T) T                  &kp Y         &kp U                       &kp I                    &hm LS(O) O  &hm LS(P) P        &td_minus
+&kp LEFT_SHIFT    &kp A        &kp S        &kp D         &kp F                   &kp G                        &kp H         &kp J                       &kp K                    &kp L        &td_semicolon      &td_apostrophe
+&kp LEFT_CONTROL  &kp Z        &kp X        &kp C         &kp V                   &kp B        &none    &none  &hm LS(N) N   &kp M                       &td_comma                &td_period   &td_forward_slash  &kp LEFT_CONTROL
+                                            &kp LEFT_ALT  &lt_kp_tap_ret 2 SPACE  &td_L1       &none    &none  &td_language  &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI ENTER
             >;
         };
 
@@ -355,11 +344,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_SEL 0  &kp F1   &kp F2   &kp F3            &kp F4    &kp F5                             &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
-&bt BT_SEL 1  &kp F6   &kp F7   &kp F8            &kp F9    &kp F10                            &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
-&bt BT_SEL 2  &kp F11  &kp F12  &hm HOME PAGE_UP  &kp UP    &hm END PAGE_DOWN                  &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&bt BT_SEL 3  &trans   &trans   &kp LEFT          &kp DOWN  &kp RIGHT          &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                &trans            &trans    &trans             &none    &none  &trans        &trans        &trans
+&bt BT_SEL 0  &kp F1   &kp F2          &kp F3        &kp F4           &kp F5                   &out OUT_USB  &out OUT_BLE  &trans           &trans    &trans    &bt BT_CLR_ALL
+&bt BT_SEL 1  &kp F6   &kp F7          &kp UP_ARROW  &kp F9           &kp F10                  &kp F7        &kp F8        &kp F9           &kp F10   &kp F11   &kp F12
+&bt BT_SEL 2  &kp F11  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans                   &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&bt BT_SEL 3  &trans   &trans          &trans        &trans           &trans   &none    &none  &trans        &kp MINUS     &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                       &trans        &trans           &trans   &none    &none  &trans        &trans        &trans
             >;
         };
 
