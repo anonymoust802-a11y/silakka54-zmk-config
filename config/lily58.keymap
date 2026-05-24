@@ -200,24 +200,6 @@
             tapping-term-ms = <200>;
         };
 
-        td_o: td_o {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_O";
-            #binding-cells = <0>;
-            bindings = <&kp O>, <&kp LS(O)>;
-
-            tapping-term-ms = <200>;
-        };
-
-        td_p: td_p {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_P";
-            #binding-cells = <0>;
-            bindings = <&kp P>, <&kp LS(P)>;
-
-            tapping-term-ms = <200>;
-        };
-
         td_L1: td_L1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_L1";
@@ -270,7 +252,7 @@
         hm_msc_mkp: hm_msc_mkp {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_MSC_MKP";
-            bindings = <&msc>, <&mkp>;
+            bindings = <&mkp>, <&msc>;
 
             #binding-cells = <2>;
             tapping-term-ms = <220>;
@@ -325,11 +307,11 @@
 
             display-name = "Base";
             bindings = <
-&td_esc           &td_1          &td_2  &td_3         &td_4                    &td_5                   &td_6         &td_7                        &td_8               &td_9       &td_0              &td_equal
-&kp TAB           &hm_2 LS(Q) Q  &kp W  &kp E         &kp R                    &kp T                   &kp Y         &kp U                        &kp I               &td_o       &td_p              &td_minus
-&kp LEFT_SHIFT    &kp A          &kp S  &kp D         &kp F                    &kp G                   &kp H         &kp J                        &kp K               &kp L       &td_semicolon      &td_apostrophe
-&kp LEFT_CONTROL  &kp Z          &kp X  &kp C         &kp V                    &kp B   &none    &none  &kp N         &kp M                        &td_comma           &td_period  &td_forward_slash  &kp LEFT_CONTROL
-                                        &kp LEFT_ALT  &lt_kp_hold_ret 2 SPACE  &td_L1  &none    &none  &td_language  &lt_kp_hold_ret 4 BACKSPACE  &hm LEFT_GUI ENTER
+&td_esc           &td_1        &td_2        &td_3         &td_4                    &td_5                        &td_6         &td_7                        &td_8               &td_9        &td_0              &td_equal
+&kp TAB           &hm LS(Q) Q  &hm LS(W) W  &hm LS(E) E   &hm LS(R) R              &hm LS(T) T                  &kp Y         &kp U                        &kp I               &hm LS(O) O  &hm LS(P) P        &td_minus
+&kp LEFT_SHIFT    &kp A        &kp S        &kp D         &kp F                    &kp G                        &kp H         &kp J                        &kp K               &kp L        &td_semicolon      &td_apostrophe
+&kp LEFT_CONTROL  &kp Z        &kp X        &kp C         &kp V                    &kp B        &none    &none  &kp N         &kp M                        &td_comma           &td_period   &td_forward_slash  &kp LEFT_CONTROL
+                                            &kp LEFT_ALT  &lt_kp_hold_ret 2 SPACE  &td_L1       &none    &none  &td_language  &lt_kp_hold_ret 4 BACKSPACE  &hm LEFT_GUI ENTER
             >;
         };
 
@@ -371,10 +353,10 @@
 
         R1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans          &trans          &trans           &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &mkp MB4  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans          &trans          &trans           &trans                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &mkp MB4  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &hm_msc_mkp LCLK SCRL_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &msc SCRL_DOWN            &trans
                         &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans
             >;
         };
