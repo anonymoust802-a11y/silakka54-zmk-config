@@ -217,7 +217,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <130>;
-            flavor = "tap-unless-interrupted";
+            flavor = "hold-preferred";
         };
 
         td_esc: td_esc {
@@ -322,7 +322,7 @@
 &td_esc           &td_1        &td_2        &td_3         &td_4                   &td_5                        &td_6         &td_7                       &td_8               &td_9        &td_0              &td_equal
 &kp TAB           &hm LS(Q) Q  &hm LS(W) W  &hm LS(E) E   &hm LS(R) R             &hm LS(T) T                  &kp Y         &kp U                       &kp I               &hm LS(O) O  &hm LS(P) P        &td_minus
 &kp LEFT_SHIFT    &kp A        &kp S        &kp D         &kp F                   &kp G                        &kp H         &kp J                       &kp K               &kp L        &td_semicolon      &td_apostrophe
-&kp LEFT_CONTROL  &kp Z        &kp X        &kp C         &kp V                   &kp B        &none    &none  &kp N         &kp M                       &td_comma           &td_period   &td_forward_slash  &kp LEFT_CONTROL
+&kp LEFT_CONTROL  &kp Z        &kp X        &kp C         &kp V                   &kp B        &none    &none  &hm LS(N) N   &kp M                       &td_comma           &td_period   &td_forward_slash  &kp LEFT_CONTROL
                                             &kp LEFT_ALT  &lt_kp_tap_ret 2 SPACE  &td_L1       &none    &none  &td_language  &lt_kp_tap_ret 4 BACKSPACE  &hm LEFT_GUI ENTER
             >;
         };
