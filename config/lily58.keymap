@@ -331,21 +331,21 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp F1   &kp F2          &kp F3          &kp F4     &kp F5                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
-&trans  &kp F6   &kp F7          &kp F8          &kp F9     &kp F10                        &trans        &trans        &trans           &trans        &trans        &trans
-&trans  &kp F11  &kp F12         &kp UP_ARROW    &trans     &kp PAGE_UP                    &trans        &trans        &kp KP_MULTIPLY  &trans        &trans        &trans
-&trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN  &none    &none  &trans        &trans        &trans           &kp LBRC      &kp RBRC      &kp PIPE
-                                 &trans          &trans     &trans         &none    &none  &trans        &trans        &trans
+&trans  &kp F1   &kp F2          &kp F3          &kp F4     &kp F5                             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
+&trans  &kp F6   &kp F7          &kp F8          &kp F9     &kp F10                            &trans        &trans        &trans           &trans        &trans        &trans
+&trans  &kp F11  &kp F12         &kp UP_ARROW    &trans     &hm PAGE_UP END                    &trans        &trans        &kp KP_MULTIPLY  &trans        &trans        &trans
+&trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &hm END PAGE_DOWN  &none    &none  &trans        &trans        &trans           &kp LBRC      &kp RBRC      &kp PIPE
+                                 &trans          &trans     &trans             &none    &none  &trans        &trans        &trans
             >;
         };
 
         R1_quick {
             bindings = <
-&trans  &trans  &trans  &trans          &trans          &trans                             &mkp MB3  &trans          &kp HOME        &trans           &trans     &trans
-&trans  &trans  &trans  &trans          &trans          &trans                             &mkp MB4  &trans          &mmv MOVE_UP    &trans           &trans     &trans
-&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans                             &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &msc SCRL_UP
-&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans    &msc SCRL_LEFT  &kp END         &msc SCRL_RIGHT  &mkp RCLK  &msc SCRL_DOWN
-                        &trans          &trans          &trans           &trans    &trans  &trans    &trans          &trans
+&trans  &trans  &trans          &trans          &trans     &trans                    &mkp MB3  &trans          &kp HOME        &trans           &trans     &trans
+&trans  &trans  &trans          &trans          &trans     &trans                    &mkp MB4  &trans          &mmv MOVE_UP    &trans           &trans     &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans     &trans                    &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &msc SCRL_UP
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans    &trans  &trans    &msc SCRL_LEFT  &kp END         &msc SCRL_RIGHT  &mkp RCLK  &msc SCRL_DOWN
+                                &trans          &trans     &trans  &trans    &trans  &trans    &trans          &trans
             >;
         };
 
