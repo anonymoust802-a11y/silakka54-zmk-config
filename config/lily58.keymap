@@ -341,11 +341,11 @@
 
         R1_quick {
             bindings = <
-&trans  &trans  &trans          &trans          &trans     &trans                    &mkp MB3  &trans          &kp RA(LA(UP_ARROW))  &trans           &trans     &trans
-&trans  &trans  &trans          &trans          &trans     &trans                    &mkp MB4  &trans          &mmv MOVE_UP          &trans           &trans     &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans     &trans                    &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN        &mmv MOVE_RIGHT  &mkp LCLK  &msc SCRL_UP
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans    &trans  &trans    &msc SCRL_LEFT  &kp END               &msc SCRL_RIGHT  &mkp RCLK  &msc SCRL_DOWN
-                                &trans          &trans     &trans  &trans    &trans  &trans    &trans          &trans
+&trans  &trans  &trans          &trans          &trans     &trans                               &mkp MB3  &trans          &kp RA(LA(UP_ARROW))  &trans           &trans     &trans
+&trans  &trans  &trans          &trans          &trans     &trans                               &mkp MB4  &trans          &mmv MOVE_UP          &trans           &trans     &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans     &hm HOME PAGE_UP                     &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN        &mmv MOVE_RIGHT  &mkp LCLK  &msc SCRL_UP
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &hm END PAGE_DOWN  &trans    &trans  &trans    &msc SCRL_LEFT  &kp END               &msc SCRL_RIGHT  &mkp RCLK  &msc SCRL_DOWN
+                                &trans          &trans     &trans             &trans    &trans  &trans    &trans          &trans
             >;
         };
 
