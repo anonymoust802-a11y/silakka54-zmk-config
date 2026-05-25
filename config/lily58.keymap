@@ -22,30 +22,6 @@
             flavor = "tap-preferred";
         };
 
-        lt_kp_hold_ret: lt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "layer";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <170>;
-            flavor = "hold-preferred";
-            retro-tap;
-        };
-
-        lt_mo_hold_ret: lt_mo_hold_ret {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_MO_HOLD_RET";
-            bindings = <&mo>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
-            flavor = "hold-preferred";
-            retro-tap;
-        };
-
         td_1: td_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_1";
@@ -241,6 +217,16 @@
             quick-tap-ms = <130>;
             flavor = "hold-preferred";
         };
+
+        lt_tog: lt_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_TOG";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <170>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&tog>;
+        };
     };
 
     combos {
@@ -288,11 +274,11 @@
 
             display-name = "Base";
             bindings = <
-&td_esc                           &td_1  &td_2  &td_3                       &td_4                   &td_5                  &td_6    &td_7                       &td_8                    &td_9        &td_0              &td_equal
-&kp TAB                           &kp Q  &kp W  &kp E                       &kp R                   &kp T                  &kp Y    &kp U                       &kp I                    &hm LS(O) O  &hm LS(P) P        &td_minus
-&kp LEFT_SHIFT                    &kp A  &kp S  &kp D                       &kp F                   &kp G                  &kp H    &kp J                       &kp K                    &kp L        &td_semicolon      &td_apostrophe
-&hm_hold LEFT_CONTROL LANGUAGE_1  &kp Z  &kp X  &kp C                       &kp V                   &kp B  &none    &none  &hm B N  &kp M                       &td_comma                &td_period   &td_forward_slash  &hm_hold LEFT_CONTROL RIGHT_ALT
-                                                &hm_mkp_hold LEFT_ALT LCLK  &lt_kp_tap_ret 2 SPACE  &none  &none    &none  &none    &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI ENTER
+&td_esc                           &td_1  &td_2  &td_3                       &td_4                   &td_5                        &td_6        &td_7                       &td_8                    &td_9        &td_0              &td_equal
+&kp TAB                           &kp Q  &kp W  &kp E                       &kp R                   &kp T                        &kp Y        &kp U                       &kp I                    &hm LS(O) O  &hm LS(P) P        &td_minus
+&kp LEFT_SHIFT                    &kp A  &kp S  &kp D                       &kp F                   &kp G                        &kp H        &kp J                       &kp K                    &kp L        &td_semicolon      &td_apostrophe
+&hm_hold LEFT_CONTROL LANGUAGE_1  &kp Z  &kp X  &kp C                       &kp V                   &kp B        &none    &none  &hm B N      &kp M                       &td_comma                &td_period   &td_forward_slash  &hm_hold LEFT_CONTROL RIGHT_ALT
+                                                &hm_mkp_hold LEFT_ALT LCLK  &lt_kp_tap_ret 2 SPACE  &lt_tog 1 1  &none    &none  &lt_tog 3 3  &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI ENTER
             >;
         };
 
