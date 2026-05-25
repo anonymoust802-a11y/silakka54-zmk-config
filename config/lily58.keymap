@@ -330,11 +330,11 @@
 
         R2_slow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3        &bt BT_SEL 4         &bt BT_CLR_ALL
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LS(LA(LC(F1)))  &kp LS(LA(LC(F2)))  &kp LC(LS(LA(F3)))  &kp LC(LS(LA(F4)))  &kp LC(LS(LA(F5)))   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LS(LC(LA(F6)))  &kp LS(LC(LA(F7)))  &kp LS(LC(LA(F8)))  &kp LS(LC(LA(F9)))  &kp LC(LS(LA(F10)))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans              &trans              &trans               &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3                   &bt BT_SEL 4                     &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans  &trans                    &hm LA(LC(LS(F1))) LA(LC(F1))  &hm LA(LC(LS(F2))) LA(LC(F2))  &hm LC(LS(LA(F3))) LA(LC(F3))  &hm LC(LS(LA(F4))) LA(LC(F4))  &hm LC(LS(LA(F5))) LA(LC(F5))    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &hm LS(LC(LA(F6))) LA(LC(F6))  &hm LS(LC(LA(F7))) LA(LC(F7))  &hm LS(LC(LA(F8))) LA(LC(F8))  &hm LS(LC(LA(F9))) LA(LC(F9))  &hm LC(LS(LA(F10))) LA(LC(F10))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                         &trans                         &trans                         &trans                         &trans                           &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans                         &trans                         &trans
             >;
         };
     };
