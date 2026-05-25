@@ -341,11 +341,11 @@
 
         R1_quick {
             bindings = <
-&trans  &trans        &trans          &trans          &trans     &trans                               &mkp MB3  &trans          &trans          &trans           &trans     &trans
-&trans  &trans        &trans          &trans          &trans     &trans                               &mkp MB4  &trans          &mmv MOVE_UP    &trans           &trans     &trans
-&trans  &trans        &trans          &kp UP_ARROW    &trans     &hm HOME PAGE_UP                     &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &msc SCRL_UP
-&trans  &kp LEFT_GUI  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &hm END PAGE_DOWN  &trans    &trans  &trans    &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &mkp RCLK  &msc SCRL_DOWN
-                                      &trans          &trans     &trans             &trans    &trans  &trans    &trans          &trans
+&trans  &hm LS(LA(LC(F1))) F1  &hm LC(LS(LA(F2))) F2  &hm LA(LS(LC(F3))) F3  &hm LC(LS(LA(F4))) F4  &hm LA(LC(LS(F5))) F5                      &trans    &trans          &trans          &trans           &trans     &trans
+&trans  &hm LS(LC(LA(F6))) F6  &hm LC(LS(LA(F7))) F7  &hm LC(LS(LA(F8))) F8  &hm LC(LS(LA(F9))) F9  &hm LC(LS(LA(F10))) F10                    &mkp MB4  &trans          &mmv MOVE_UP    &trans           &trans     &trans
+&trans  &trans                 &trans                 &kp UP_ARROW           &trans                 &hm HOME PAGE_UP                           &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &msc SCRL_UP
+&trans  &kp LEFT_GUI           &kp LEFT_ARROW         &kp DOWN_ARROW         &kp RIGHT              &hm END PAGE_DOWN        &trans    &trans  &trans    &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &mkp RCLK  &msc SCRL_DOWN
+                                                      &trans                 &trans                 &trans                   &trans    &trans  &trans    &trans          &trans
             >;
         };
 
