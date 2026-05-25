@@ -248,24 +248,6 @@
             flavor = "tap-preferred";
             retro-tap;
         };
-
-        td_scroll_up: td_scroll_up {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SCROLL_UP";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&kp PAGE_UP>, <&kp HOME>;
-
-            tapping-term-ms = <200>;
-        };
-
-        td_scroll_down: td_scroll_down {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SCROLL_DOWN";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&kp PAGE_DOWN>, <&kp END>;
-
-            tapping-term-ms = <200>;
-        };
     };
 
     combos {
@@ -359,11 +341,11 @@
 
         R1_quick {
             bindings = <
-&trans  &trans  &trans          &trans          &trans     &trans                               &mkp MB3  &trans          &kp RA(LA(UP_ARROW))  &trans           &trans     &trans
-&trans  &trans  &trans          &trans          &trans     &trans                               &mkp MB4  &trans          &mmv MOVE_UP          &trans           &trans     &trans
-&trans  &trans  &kp LEFT_GUI    &kp UP_ARROW    &trans     &hm HOME PAGE_UP                     &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN        &mmv MOVE_RIGHT  &mkp LCLK  &td_scroll_up
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &hm END PAGE_DOWN  &trans    &trans  &trans    &msc SCRL_LEFT  &kp END               &msc SCRL_RIGHT  &mkp RCLK  &td_scroll_down
-                                &trans          &trans     &trans             &trans    &trans  &trans    &trans          &trans
+&trans  &trans        &trans          &trans          &trans     &trans                               &mkp MB3  &trans          &trans          &trans           &trans     &trans
+&trans  &trans        &trans          &trans          &trans     &trans                               &mkp MB4  &trans          &mmv MOVE_UP    &trans           &trans     &trans
+&trans  &trans        &trans          &kp UP_ARROW    &trans     &hm HOME PAGE_UP                     &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &msc SCRL_UP
+&trans  &kp LEFT_GUI  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &hm END PAGE_DOWN  &trans    &trans  &trans    &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &mkp RCLK  &msc SCRL_DOWN
+                                      &trans          &trans     &trans             &trans    &trans  &trans    &trans          &trans
             >;
         };
 
