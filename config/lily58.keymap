@@ -277,7 +277,7 @@
 &td_esc                           &td_1  &td_2  &td_3                       &td_4                   &td_5                        &td_6        &td_7                       &td_8                    &td_9        &td_0              &td_equal
 &kp TAB                           &kp Q  &kp W  &kp E                       &kp R                   &kp T                        &kp Y        &kp U                       &kp I                    &hm LS(O) O  &hm LS(P) P        &td_minus
 &kp LEFT_SHIFT                    &kp A  &kp S  &kp D                       &kp F                   &kp G                        &kp H        &kp J                       &kp K                    &kp L        &td_semicolon      &td_apostrophe
-&hm_hold LEFT_CONTROL LANGUAGE_1  &kp Z  &kp X  &kp C                       &kp V                   &kp B        &none    &none  &hm B N      &kp M                       &td_comma                &td_period   &td_forward_slash  &hm_hold LEFT_CONTROL RIGHT_ALT
+&hm_hold LEFT_CONTROL LANGUAGE_1  &kp Z  &kp X  &kp C                       &kp V                   &hm N B      &none    &none  &hm B N      &kp M                       &td_comma                &td_period   &td_forward_slash  &hm_hold LEFT_CONTROL RIGHT_ALT
                                                 &hm_mkp_hold LEFT_ALT LCLK  &lt_kp_tap_ret 2 SPACE  &lt_tog 1 1  &none    &none  &lt_tog 3 3  &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI ENTER
             >;
         };
@@ -310,11 +310,11 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp F1   &kp F2          &kp F3          &kp F4     &kp F5                             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
-&trans  &kp F6   &kp F7          &kp F8          &kp F9     &kp F10                            &trans        &trans        &trans           &trans        &trans        &trans
-&trans  &kp F11  &kp F12         &kp UP_ARROW    &trans     &hm PAGE_UP END                    &trans        &trans        &kp KP_MULTIPLY  &trans        &trans        &trans
-&trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &hm END PAGE_DOWN  &none    &none  &trans        &trans        &trans           &kp LBRC      &kp RBRC      &kp PIPE
-                                 &trans          &trans     &trans             &none    &none  &trans        &trans        &trans
+&trans  &kp F11  &kp F12         &kp F13         &kp F14          &kp F15                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
+&trans  &kp F16  &kp F17         &kp UP_ARROW    &trans           &hm_hold HOME PAGE_UP                  &trans        &trans        &trans           &trans        &trans        &trans
+&trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &hm END PAGE_DOWN                      &trans        &trans        &kp KP_MULTIPLY  &trans        &trans        &trans
+&trans  &trans   &trans          &trans          &trans           &trans                 &none    &none  &trans        &trans        &trans           &kp LBRC      &kp RBRC      &kp PIPE
+                                 &trans          &trans           &trans                 &none    &none  &trans        &trans        &trans
             >;
         };
 
