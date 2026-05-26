@@ -277,7 +277,7 @@
 &td_esc                           &td_1  &td_2  &td_3                       &td_4                   &td_5                        &td_6        &td_7                       &td_8                    &td_9        &td_0              &td_equal
 &kp TAB                           &kp Q  &kp W  &kp E                       &kp R                   &kp T                        &kp Y        &kp U                       &kp I                    &hm LS(O) O  &hm LS(P) P        &td_minus
 &kp LEFT_SHIFT                    &kp A  &kp S  &kp D                       &kp F                   &kp G                        &kp H        &kp J                       &kp K                    &kp L        &td_semicolon      &td_apostrophe
-&hm_hold LEFT_CONTROL LANGUAGE_1  &kp Z  &kp X  &kp C                       &kp V                   &hm N B      &none    &none  &hm B N      &kp M                       &td_comma                &td_period   &td_forward_slash  &hm_hold LEFT_CONTROL RIGHT_ALT
+&hm_hold LEFT_CONTROL LANGUAGE_1  &kp Z  &kp X  &kp C                       &kp V                   &kp N        &none    &none  &hm B N      &kp M                       &td_comma                &td_period   &td_forward_slash  &hm_hold LEFT_CONTROL RIGHT_ALT
                                                 &hm_mkp_hold LEFT_ALT LCLK  &lt_kp_tap_ret 2 SPACE  &lt_tog 1 1  &none    &none  &lt_tog 3 3  &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI ENTER
             >;
         };
