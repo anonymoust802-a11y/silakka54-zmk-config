@@ -141,7 +141,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_R1";
             #binding-cells = <0>;
-            bindings = <&lt_kp_tap_ret 3 RIGHT_ARROW>, <&tog 3>;
+            bindings = <&lt_kp_tap_ret 3 RIGHT_ALT>, <&tog 3>;
 
             tapping-term-ms = <200>;
         };
@@ -195,7 +195,7 @@
 &td_esc                           &hm F1 NUMBER_1  &hm F2 NUMBER_2  &hm F3 NUMBER_3               &hm F4 NUMBER_4         &hm F5 NUMBER_5                  &hm F6 NUMBER_6  &hm F7 NUMBER_7             &hm F8 NUMBER_8          &hm F9 NUMBER_9  &hm F10 NUMBER_0   &td_equal
 &kp TAB                           &kp Q            &kp W            &kp E                         &kp R                   &kp T                            &kp Y            &kp U                       &kp I                    &hm LS(O) O      &hm LS(P) P        &td_minus
 &kp LEFT_SHIFT                    &kp A            &kp S            &kp D                         &kp F                   &kp G                            &kp H            &kp J                       &kp K                    &kp L            &td_semicolon      &td_apostrophe
-&hm_hold LEFT_CONTROL LANGUAGE_1  &kp Z            &kp X            &kp C                         &kp V                   &kp B            &none    &none  &hm B N          &kp M                       &td_comma                &td_period       &td_forward_slash  &hm_hold LEFT_CONTROL RIGHT_ALT
+&hm_hold LEFT_CONTROL LANGUAGE_1  &kp Z            &kp X            &kp C                         &kp V                   &kp B            &none    &none  &hm B N          &kp M                       &td_comma                &td_period       &td_forward_slash  &hm_hold LEFT_CONTROL LANGUAGE_2
                                                                     &hm_hold LEFT_ALT LEFT_ARROW  &lt_kp_tap_ret 2 SPACE  &td_l1           &none    &none  &td_r1           &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI ENTER
             >;
         };
