@@ -228,21 +228,21 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp F13  &kp F14         &kp F15         &kp F16          &kp F17                                &trans  &trans  &trans                       &trans                         &trans         &trans
-&trans  &kp F18  &kp F19         &kp UP_ARROW    &kp F20          &hm_hold HOME PAGE_UP                  &trans  &trans  &trans                       &trans                         &trans         &trans
-&trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &hm END PAGE_DOWN                      &trans  &trans  &trans                       &trans                         &trans         &trans
-&trans  &trans   &trans          &trans          &trans           &trans                 &none    &none  &trans  &trans  &hm LEFT_BRACKET LEFT_BRACE  &hm RIGHT_BRACKET RIGHT_BRACE  &kp BACKSLASH  &trans
-                                 &trans          &trans           &trans                 &none    &none  &trans  &trans  &trans
+&bt BT_SEL 0  &kp F13  &kp F14         &kp F15         &kp F16          &kp F17                                &trans  &trans  &trans                       &trans                         &trans         &trans
+&bt BT_SEL 1  &kp F18  &kp F19         &kp UP_ARROW    &kp F20          &hm_hold HOME PAGE_UP                  &trans  &trans  &trans                       &trans                         &trans         &trans
+&bt BT_SEL 2  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &hm END PAGE_DOWN                      &trans  &trans  &trans                       &trans                         &trans         &trans
+&bt BT_SEL 3  &trans   &trans          &trans          &trans           &trans                 &none    &none  &trans  &trans  &hm LEFT_BRACKET LEFT_BRACE  &hm RIGHT_BRACKET RIGHT_BRACE  &kp BACKSLASH  &trans
+                                       &trans          &trans           &trans                 &none    &none  &trans  &trans  &trans
             >;
         };
 
         R1_quick {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                               &trans    &trans          &trans          &trans           &trans     &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &hm HOME PAGE_UP                     &mkp MB4  &trans          &mmv MOVE_UP    &trans           &trans     &trans
-&trans  &trans  &kt LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &hm END PAGE_DOWN                    &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &msc SCRL_UP
-&trans  &trans  &trans          &trans          &trans           &trans             &trans    &trans  &trans    &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &mkp RCLK  &msc SCRL_DOWN
-                                &trans          &trans           &trans             &trans    &trans  &trans    &trans          &trans
+&trans  &trans  &trans          &trans          &trans           &trans                               &trans          &trans          &trans          &trans           &trans     &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &hm HOME PAGE_UP                     &msc SCRL_UP    &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans     &trans
+&trans  &trans  &kt LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &hm END PAGE_DOWN                    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &trans
+&trans  &trans  &trans          &trans          &trans           &trans             &trans    &trans  &trans          &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &mkp RCLK  &trans
+                                &trans          &trans           &trans             &trans    &trans  &trans          &trans          &trans
             >;
         };
 
