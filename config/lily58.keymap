@@ -194,6 +194,31 @@
             bindings = <&kp LC(LS(N))>;
             key-positions = <36 37 38 39>;
         };
+
+        f13 {
+            bindings = <&kp LC(LS(F13))>;
+            key-positions = <1 51>;
+        };
+
+        f14 {
+            bindings = <&kp LC(LS(F14))>;
+            key-positions = <51 2>;
+        };
+
+        f15 {
+            bindings = <&kp LC(LS(F15))>;
+            key-positions = <51 3>;
+        };
+
+        f16 {
+            bindings = <&kp LC(LS(F16))>;
+            key-positions = <51 4>;
+        };
+
+        f17 {
+            bindings = <&kp LC(LS(F17))>;
+            key-positions = <51 5>;
+        };
     };
 
     keymap {
