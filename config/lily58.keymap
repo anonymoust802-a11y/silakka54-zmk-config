@@ -189,6 +189,11 @@
             bindings = <&kp LC(TAB)>;
             key-positions = <13 14 15>;
         };
+
+        ctrl_shift_n {
+            bindings = <&kp LC(LS(N))>;
+            key-positions = <36 37 38 39>;
+        };
     };
 
     keymap {
