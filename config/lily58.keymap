@@ -117,17 +117,6 @@
             retro-tap;
         };
 
-        hm_mkp_hold: hm_mkp_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_MKP_HOLD";
-            bindings = <&kp>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
-            flavor = "hold-preferred";
-        };
-
         td_l1: td_l1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_L1";
@@ -228,11 +217,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_SEL 0  &kp F13  &kp F14         &kp F15         &kp F16          &kp F17                                &trans  &trans  &trans                       &trans                         &trans         &trans
-&bt BT_SEL 1  &kp F18  &kp F19         &kp UP_ARROW    &kp F20          &hm_hold HOME PAGE_UP                  &trans  &trans  &trans                       &trans                         &trans         &trans
-&bt BT_SEL 2  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &hm END PAGE_DOWN                      &trans  &trans  &trans                       &trans                         &trans         &trans
-&bt BT_SEL 3  &trans   &trans          &trans          &trans           &trans                 &none    &none  &trans  &trans  &hm LEFT_BRACKET LEFT_BRACE  &hm RIGHT_BRACKET RIGHT_BRACE  &kp BACKSLASH  &trans
-                                       &trans          &trans           &trans                 &none    &none  &trans  &trans  &trans
+&bt BT_SEL 0  &hm LC(LS(F13)) F13  &hm LS(LC(F14)) F14  &hm LC(LS(F15)) F15  &hm LC(LS(F16)) F16  &hm LC(LS(F17)) F17                    &trans  &trans  &trans                       &trans                         &trans         &trans
+&bt BT_SEL 1  &kp F18              &kp F19              &kp UP_ARROW         &kp F20              &hm_hold HOME PAGE_UP                  &trans  &trans  &trans                       &trans                         &trans         &trans
+&bt BT_SEL 2  &trans               &kp LEFT_ARROW       &kp DOWN_ARROW       &kp RIGHT_ARROW      &hm END PAGE_DOWN                      &trans  &trans  &trans                       &trans                         &trans         &trans
+&bt BT_SEL 3  &trans               &trans               &trans               &trans               &trans                 &none    &none  &trans  &trans  &hm LEFT_BRACKET LEFT_BRACE  &hm RIGHT_BRACKET RIGHT_BRACE  &kp BACKSLASH  &trans
+                                                        &trans               &trans               &trans                 &none    &none  &trans  &trans  &trans
             >;
         };
 
