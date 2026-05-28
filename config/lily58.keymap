@@ -239,9 +239,9 @@
         R1_quick {
             bindings = <
 &trans  &trans  &trans          &trans          &trans           &trans                               &trans          &trans          &trans          &trans           &trans     &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &hm HOME PAGE_UP                     &msc SCRL_UP    &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans     &trans
-&trans  &trans  &kt LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &hm END PAGE_DOWN                    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &trans
-&trans  &trans  &trans          &trans          &trans           &trans             &trans    &trans  &trans          &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &mkp RCLK  &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans                               &msc SCRL_UP    &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans     &trans
+&trans  &trans  &kt LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &hm HOME PAGE_UP                     &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &trans
+&trans  &trans  &trans          &trans          &trans           &hm END PAGE_DOWN  &trans    &trans  &trans          &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &mkp RCLK  &trans
                                 &trans          &trans           &trans             &trans    &trans  &trans          &trans          &trans
             >;
         };
