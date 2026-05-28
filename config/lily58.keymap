@@ -139,12 +139,6 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
-            timeout-ms = <50>;
-        };
-
         cc {
             bindings = <&kp LC(C)>;
             key-positions = <25 26 27>;
@@ -164,6 +158,36 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <52 51>;
+        };
+
+        bt_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <0 1 2>;
+        };
+
+        bt_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <1 2 3>;
+        };
+
+        bt_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <2 3 4>;
+        };
+
+        bt_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <3 4 5>;
+        };
+
+        ctrl_shift_tab {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <12 13 14>;
+        };
+
+        ctrl_tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <13 14 15>;
         };
     };
 
@@ -217,11 +241,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_SEL 0  &hm LC(LS(F13)) F13  &hm LS(LC(F14)) F14  &hm LC(LS(F15)) F15  &hm LC(LS(F16)) F16  &hm LC(LS(F17)) F17                    &trans  &trans  &trans                       &trans                         &trans         &trans
-&bt BT_SEL 1  &kp F18              &kp F19              &kp UP_ARROW         &kp F20              &hm_hold HOME PAGE_UP                  &trans  &trans  &trans                       &trans                         &trans         &trans
-&bt BT_SEL 2  &trans               &kp LEFT_ARROW       &kp DOWN_ARROW       &kp RIGHT_ARROW      &hm END PAGE_DOWN                      &trans  &trans  &trans                       &trans                         &trans         &trans
-&bt BT_SEL 3  &trans               &trans               &trans               &trans               &trans                 &none    &none  &trans  &trans  &hm LEFT_BRACKET LEFT_BRACE  &hm RIGHT_BRACKET RIGHT_BRACE  &kp BACKSLASH  &trans
-                                                        &trans               &trans               &trans                 &none    &none  &trans  &trans  &trans
+&trans  &hm LC(LS(F13)) F13  &hm LS(LC(F14)) F14  &hm LC(LS(F15)) F15  &hm LC(LS(F16)) F16  &hm LC(LS(F17)) F17                    &trans  &trans  &trans                       &trans                         &trans         &trans
+&trans  &kp F18              &kp F19              &kp UP_ARROW         &kp F20              &hm_hold HOME PAGE_UP                  &trans  &trans  &trans                       &trans                         &trans         &trans
+&trans  &trans               &kp LEFT_ARROW       &kp DOWN_ARROW       &kp RIGHT_ARROW      &hm END PAGE_DOWN                      &trans  &trans  &trans                       &trans                         &trans         &trans
+&trans  &trans               &trans               &trans               &trans               &trans                 &none    &none  &trans  &trans  &hm LEFT_BRACKET LEFT_BRACE  &hm RIGHT_BRACKET RIGHT_BRACE  &kp BACKSLASH  &trans
+                                                  &trans               &trans               &trans                 &none    &none  &trans  &trans  &trans
             >;
         };
 
