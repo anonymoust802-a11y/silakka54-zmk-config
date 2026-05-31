@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COMMA";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp LS(SEMICOLON)>;
+            bindings = <&kp COMMA>, <&kp LS(COMMA)>;
 
             tapping-term-ms = <200>;
         };
@@ -228,6 +228,11 @@
         win_down {
             bindings = <&kp LG(DOWN_ARROW)>;
             key-positions = <37 38 39 40>;
+        };
+
+        ctrl_space {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <36 51>;
         };
     };
 
