@@ -245,7 +245,17 @@
 
         ctrl_space {
             bindings = <&kp LC(SPACE)>;
-            key-positions = <36 51>;
+            key-positions = <51 24>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <25 26 27>;
+        };
+
+        enter_2 {
+            bindings = <&kp ENTER>;
+            key-positions = <32 33 34>;
         };
     };
 
