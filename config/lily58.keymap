@@ -257,6 +257,36 @@
             bindings = <&kp ENTER>;
             key-positions = <32 33 34>;
         };
+
+        ctrl_enter {
+            bindings = <&kp LC(ENTER)>;
+            key-positions = <25 26 27 24>;
+        };
+
+        ctrl_enter_2 {
+            bindings = <&kp LC(ENTER)>;
+            key-positions = <35 34 33 32>;
+        };
+
+        shift_enter {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <25 26 27 36>;
+        };
+
+        shift_enter_2 {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <49 34 33 32>;
+        };
+
+        bt_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <6 7 8>;
+        };
+
+        bt_clr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <7 8 9>;
+        };
     };
 
     keymap {
