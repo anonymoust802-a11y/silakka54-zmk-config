@@ -248,7 +248,7 @@
         ctrl_space {
             bindings = <&kp LC(SPACE)>;
             key-positions = <51 24>;
-            timeout-ms = <500>;
+            timeout-ms = <200>;
         };
 
         enter {
