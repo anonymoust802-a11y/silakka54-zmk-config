@@ -296,6 +296,11 @@
             key-positions = <55 57>;
             timeout-ms = <100>;
         };
+
+        layer5 {
+            bindings = <&tog 5>;
+            key-positions = <0 1 4 5>;
+        };
     };
 
     keymap {
