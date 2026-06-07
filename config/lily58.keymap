@@ -149,6 +149,18 @@
             quick-tap-ms = <170>;
             flavor = "tap-preferred";
         };
+
+        hm_hold_while_undecided: hm_hold_while_undecided {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_HOLD_WHILE_UNDECIDED";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            flavor = "hold-preferred";
+            hold-while-undecided;
+        };
     };
 
     combos {
@@ -286,11 +298,11 @@
 
             display-name = "Base";
             bindings = <
-&td_esc                           &hm F1 NUMBER_1  &hm F2 NUMBER_2  &hm F3 NUMBER_3               &hm F4 NUMBER_4         &hm F5 NUMBER_5                                &hm F6 NUMBER_6  &hm F7 NUMBER_7             &hm F8 NUMBER_8          &hm F9 NUMBER_9  &hm F10 NUMBER_0   &td_equal
-&hm LEFT_GUI TAB                  &hm LS(Q) Q      &hm LS(W) W      &hm LS(E) E                   &hm LS(R) R             &hm LS(T) T                                    &kp Y            &kp U                       &kp I                    &hm LS(O) O      &hm LS(P) P        &td_minus
-&hm_hold LEFT_CONTROL LANGUAGE_1  &kp A            &kp S            &kp D                         &kp F                   &kp G                                          &kp H            &kp J                       &kp K                    &kp L            &td_semicolon      &td_apostrophe
-&hm_hold LEFT_SHIFT LANGUAGE_2    &kp Z            &kp X            &kp C                         &kp V                   &kp B                          &none    &none  &hm B N          &kp M                       &td_comma                &td_period       &td_forward_slash  &hm_hold LEFT_SHIFT LANGUAGE_2
-                                                                    &hm_hold LEFT_ALT LEFT_ARROW  &lt_kp_tap_ret 2 SPACE  &lt_kp_hold_ret 1 RIGHT_ARROW  &none    &none  &td_r1           &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI ENTER
+&td_esc                                           &hm F1 NUMBER_1  &hm F2 NUMBER_2  &hm F3 NUMBER_3               &hm F4 NUMBER_4         &hm F5 NUMBER_5                                &hm F6 NUMBER_6  &hm F7 NUMBER_7             &hm F8 NUMBER_8          &hm F9 NUMBER_9  &hm F10 NUMBER_0   &td_equal
+&hm LEFT_GUI TAB                                  &hm LS(Q) Q      &hm LS(W) W      &hm LS(E) E                   &hm LS(R) R             &hm LS(T) T                                    &kp Y            &kp U                       &kp I                    &hm LS(O) O      &hm LS(P) P        &td_minus
+&hm_hold_while_undecided LEFT_CONTROL LANGUAGE_1  &kp A            &kp S            &kp D                         &kp F                   &kp G                                          &kp H            &kp J                       &kp K                    &kp L            &td_semicolon      &td_apostrophe
+&hm_hold_while_undecided LEFT_SHIFT LANGUAGE_2    &kp Z            &kp X            &kp C                         &kp V                   &kp B                          &none    &none  &hm B N          &kp M                       &td_comma                &td_period       &td_forward_slash  &hm_hold_while_undecided LEFT_SHIFT LANGUAGE_2
+                                                                                    &hm_hold LEFT_ALT LEFT_ARROW  &lt_kp_tap_ret 2 SPACE  &lt_kp_hold_ret 1 RIGHT_ARROW  &none    &none  &td_r1           &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI ENTER
             >;
         };
 
