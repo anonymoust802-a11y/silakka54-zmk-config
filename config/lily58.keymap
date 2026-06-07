@@ -375,5 +375,15 @@
                         &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans
             >;
         };
+
+        layer_5 {
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R  &kp Y  &kp U                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp A  &kp S  &kp D  &kp F  &kp H  &kp J                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp Z  &kp X  &kp C  &kp V  &kp K  &kp L                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp T  &kp G  &kp B  &kp N  &kp N  &kp M  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                     &kp O  &kp P  &kp A  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
