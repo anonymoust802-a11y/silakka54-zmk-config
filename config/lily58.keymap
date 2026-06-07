@@ -186,16 +186,19 @@
         bt_1 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <1 2 3>;
+            timeout-ms = <50>;
         };
 
         bt_2 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <2 3 4>;
+            timeout-ms = <50>;
         };
 
         bt_3 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <3 4 5>;
+            timeout-ms = <50>;
         };
 
         ctrl_shift_tab {
@@ -241,21 +244,25 @@
         win_left {
             bindings = <&kp LG(LEFT_ARROW)>;
             key-positions = <25 27 26 28>;
+            timeout-ms = <70>;
         };
 
         win_right {
             bindings = <&kp LG(RIGHT_ARROW)>;
             key-positions = <27 26 28 29>;
+            timeout-ms = <70>;
         };
 
         win_up {
             bindings = <&kp LG(UP_ARROW)>;
             key-positions = <13 14 15 16>;
+            timeout-ms = <70>;
         };
 
         win_down {
             bindings = <&kp LG(DOWN_ARROW)>;
             key-positions = <37 38 39 40>;
+            timeout-ms = <70>;
         };
 
         ctrl_space {
@@ -267,21 +274,25 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <26 27 28>;
+            timeout-ms = <70>;
         };
 
         enter_2 {
             bindings = <&kp ENTER>;
             key-positions = <32 33 31>;
+            timeout-ms = <70>;
         };
 
         bt_4 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <6 7 8>;
+            timeout-ms = <50>;
         };
 
         bt_clr {
             bindings = <&bt BT_CLR>;
             key-positions = <7 8 9>;
+            timeout-ms = <50>;
         };
     };
 
