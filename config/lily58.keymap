@@ -148,9 +148,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <130>;
-            flavor = "hold-preferred";
-            hold-while-undecided;
-            require-prior-idle-ms = <125>;
+            flavor = "balanced";
         };
     };
 
@@ -264,13 +262,13 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <26 27 28>;
-            timeout-ms = <70>;
+            timeout-ms = <120>;
         };
 
         enter_2 {
             bindings = <&kp ENTER>;
             key-positions = <32 33 31>;
-            timeout-ms = <70>;
+            timeout-ms = <100>;
         };
 
         bt_4 {
