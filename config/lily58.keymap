@@ -35,7 +35,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_APOSTROPHE";
             #binding-cells = <0>;
-            bindings = <&hm_hold LEFT_CONTROL APOS>, <&kp LS(MINUS)>;
+            bindings = <&hm_hold LEFT_CONTROL APOS>, <&kp LS(APOSTROPHE)>;
 
             tapping-term-ms = <200>;
         };
