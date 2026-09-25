@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COMMA";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp LS(COMMA)>;
+            bindings = <&hm LBKT COMMA>, <&kp LS(COMMA)>;
 
             tapping-term-ms = <200>;
         };
@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PERIOD";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD>, <&kp LS(PERIOD)>;
+            bindings = <&hm RIGHT_BRACKET PERIOD>, <&kp LS(PERIOD)>;
 
             tapping-term-ms = <200>;
         };
