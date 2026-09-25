@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_FORWARD_SLASH";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp LS(SLASH)>;
+            bindings = <&hm BACKSLASH SLASH>, <&kp LS(SLASH)>;
 
             tapping-term-ms = <200>;
         };
