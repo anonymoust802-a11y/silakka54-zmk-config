@@ -35,7 +35,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_APOSTROPHE";
             #binding-cells = <0>;
-            bindings = <&hm_hold LEFT_CONTROL APOS>, <&kp LS(APOSTROPHE)>;
+            bindings = <&hm_hold LEFT_SHIFT APOS>, <&kp LS(APOSTROPHE)>;
 
             tapping-term-ms = <200>;
         };
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SEMICOLON";
             #binding-cells = <0>;
-            bindings = <&kp SEMICOLON>, <&kp LS(SEMICOLON)>;
+            bindings = <&hm LS(SEMICOLON) SEMICOLON>, <&kp LANGUAGE_2>;
 
             tapping-term-ms = <200>;
         };
@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COMMA";
             #binding-cells = <0>;
-            bindings = <&hm LBKT COMMA>, <&kp LS(COMMA)>;
+            bindings = <&hm LS(COMMA) COMMA>, <&kp LEFT_BRACKET>;
 
             tapping-term-ms = <200>;
         };
@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_FORWARD_SLASH";
             #binding-cells = <0>;
-            bindings = <&hm BACKSLASH SLASH>, <&kp LS(SLASH)>;
+            bindings = <&hm LS(SLASH) SLASH>, <&kp BACKSLASH>;
 
             tapping-term-ms = <200>;
         };
@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PERIOD";
             #binding-cells = <0>;
-            bindings = <&hm RIGHT_BRACKET PERIOD>, <&kp LS(PERIOD)>;
+            bindings = <&hm LS(PERIOD) PERIOD>, <&kp RIGHT_BRACKET>;
 
             tapping-term-ms = <200>;
         };
@@ -318,7 +318,7 @@
 &td_esc                                           &hm F1 NUMBER_1  &hm F2 NUMBER_2  &hm F3 NUMBER_3               &hm F4 NUMBER_4         &hm F5 NUMBER_5                               &hm F6 NUMBER_6            &hm F7 NUMBER_7             &hm F8 NUMBER_8               &hm F9 NUMBER_9  &hm F10 NUMBER_0   &td_equal
 &hm LEFT_GUI TAB                                  &hm LS(Q) Q      &kp W            &kp E                         &kp R                   &kp T                                         &kp Y                      &kp U                       &kp I                         &hm LS(O) O      &hm LS(P) P        &td_minus
 &hm_hold_while_undecided LEFT_SHIFT CAPSLOCK      &kp A            &kp S            &kp D                         &kp F                   &kp G                                         &kp H                      &kp J                       &kp K                         &kp L            &td_semicolon      &td_apostrophe
-&hm_hold_while_undecided LEFT_CONTROL LANGUAGE_1  &kp Z            &kp X            &kp C                         &kp V                   &kp B                         &none    &none  &hm B N                    &kp M                       &td_comma                     &td_period       &td_forward_slash  &hm_hold_while_undecided LEFT_SHIFT LANG2
+&hm_hold_while_undecided LEFT_CONTROL LANGUAGE_1  &kp Z            &kp X            &kp C                         &kp V                   &kp B                         &none    &none  &hm B N                    &kp M                       &td_comma                     &td_period       &td_forward_slash  &hm_hold_while_undecided LEFT_CONTROL LC(SPACE)
                                                                                     &hm_hold LEFT_ALT LEFT_ARROW  &lt_kp_tap_ret 2 SPACE  &lt_sl_kp_hold 1 RIGHT_ARROW  &none    &none  &lt_sl_kp_hold 3 UP_ARROW  &lt_kp_tap_ret 4 BACKSPACE  &hm_hold LEFT_GUI DOWN_ARROW
             >;
         };
